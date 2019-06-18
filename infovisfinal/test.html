@@ -1,0 +1,34 @@
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>final task</title>
+  </head>
+
+  <body style="margin:0">
+    <div>
+    <p>ayo</p>
+    </div>
+    <div id="display" style="width:40%; float: right;">
+    </div>
+    <div id="controller" style="width:10%; float:right;">
+      <label id="Xlabel" style="font-family:Arial;"></label>
+      <input type="range" min="0" max="63" step="1" value="32" id="seedPointX"/>
+      <label id="Ylabel" style="font-family:Arial;"></label>
+      <input type="range" min="0" max="63" step="1" value="32" id="seedPointY"/>
+      <label id="Zlabel" style="font-family:Arial;"></label>
+      <input type="range" min="0" max="63" step="1" value="32" id="seedPointZ"/>
+      <button id="add-line-button" style="font-family=Arial;">Addline</button>
+    </div>
+
+    <script src="three.min.js"></script>
+  	<script src="TrackballControls.js"></script>
+  	<script src="https://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+  	<script src="https://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+  	<script src="streamline1.js"></script>
+  	<script>
+  	 main();
+  	</script>
+  </body>
+
+</html>

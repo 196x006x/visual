@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>final task</title>
+  </head>
+
+  <body style="margin:0">
+    <div id="display" style="width:30%; float: right;">
+    </div>
+    <div id="controller" style="width:10%; float:right;">
+      <label id="Xlabel" style="font-family:Arial;"></label>
+      <input type="range" min="0" max="63" step="1" value="32" id="seedPointX"/>
+      <label id="Ylabel" style="font-family:Arial;"></label>
+      <input type="range" min="0" max="63" step="1" value="32" id="seedPointY"/>
+      <label id="Zlabel" style="font-family:Arial;"></label>
+      <input type="range" min="0" max="63" step="1" value="32" id="seedPointZ"/>
+      <button id="add-line-button" style="font-family=Arial;">Addline</button>
+    </div>
+    <div>
+      <h1>情報化可視化論最終レポート </h1>
+      <p>196x006x 大田　和樹</p>
+      <h2>概要</h2>
+      <p>KVSライブラリのTornado dataをもとに、パラメータを設定して新たな流れの線を描画するボタンを追加した。</p>
+      <h2>描画結果</h2>
+      <p>描画した結果は右上のようになる。各つまみによってパラメーターを設定し、ボタンによって線を追加する。</p>
+      <h2>実装した内容の説明</h2>
+      <p>各つまみseedPointX,seedPointY,seedPointZは、それぞれKVS.StreamLineのパラメータseedPoint(Vec3)の、X,Y,Zに対応する。</p>
+      <p>AddLineボタンを押すことによって、X,Y,Zを取得し、新たなStreamLineオブジェクトを描画する。</p>
+    </div>
+
+    <script src="three.min.js"></script>
+  	<script src="TrackballControls.js"></script>
+  	<script src="https://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+  	<script src="https://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+  	<script src="streamline1.js"></script>
+  	<script>
+  	 main();
+  	</script>
+  </body>
+
+</html>
